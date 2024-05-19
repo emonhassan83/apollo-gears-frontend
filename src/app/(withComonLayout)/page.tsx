@@ -1,7 +1,9 @@
-// import Banner from "./components/page/home/Banner";
+import Banner from "./components/page/home/Banner";
 
 export default function Home() {
-  return <div>
-    banner
-  </div>;
+  return (
+    <div>
+      <Banner />
+    </div>
+  );
 }

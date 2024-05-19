@@ -1,5 +1,6 @@
 import { Card, CardBody, CardHeader } from "@nextui-org/react";
 import { Cog } from "lucide-react";
+import LoginFrom from "./LoginFrom";
 
 const LoginPage = () => {
   return (
@@ -11,7 +12,9 @@ const LoginPage = () => {
             <p className="font-bold text-inherit px-4">Login</p>
           </div>
         </CardHeader>
-        <CardBody>{/* <LoginFrom/> */}</CardBody>
+        <CardBody>
+          <LoginFrom />
+        </CardBody>
       </Card>
     </div>
   );

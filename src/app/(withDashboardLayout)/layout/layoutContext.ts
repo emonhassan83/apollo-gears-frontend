@@ -1,11 +1,12 @@
-"use client"
+"use client";
+
 import {createContext, useContext} from 'react';
 
 interface SidebarContext {
    collapsed: boolean;
    setCollapsed: () => void;
 }
-
+//* for using sidebar collapsed
 export const SidebarContext = createContext<SidebarContext>({
    collapsed: false,
    setCollapsed: () => {},

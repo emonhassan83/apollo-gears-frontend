@@ -1,11 +1,16 @@
 "use client";
+
 import React, { useState } from "react";
-import { SidebarContext } from "./layout-context";
+import { SidebarContext } from "./layoutContext";
+
+//* for using sidebar toggle
 const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
+
   const handleToggleSidebar = () => {
     setSidebarOpen(!sidebarOpen);
   };
+
   return (
     <SidebarContext.Provider
       value={{

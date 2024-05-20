@@ -9,8 +9,8 @@ interface Props {
   href?: string;
 }
 
+//* create reusable sidebar items
 export const SidebarItem = ({ icon, title, isActive, href = "" }: Props) => {
-  
   const handleClick = () => {
     if (window.innerWidth < 768) {
       // setCollapsed();

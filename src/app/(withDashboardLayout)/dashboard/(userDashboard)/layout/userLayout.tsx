@@ -1,4 +1,4 @@
-import { SidebarWrapper } from "@/app/(withDashboardLayout)/sidebar/sidebar.styles";
+import { UserSidebarWrapper } from "@/app/(withDashboardLayout)/components/sidebar/userSidebar";
 
 export default function UserLayout({
   children,
@@ -8,7 +8,7 @@ export default function UserLayout({
   return (
     <div className="flex">
       {/* <NavbarWrapper>{children}</NavbarWrapper> */}
-      <SidebarWrapper/>
+      <UserSidebarWrapper/>
     </div>
   );
 }

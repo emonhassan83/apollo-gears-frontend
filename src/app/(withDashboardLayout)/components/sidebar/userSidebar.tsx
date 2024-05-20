@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation";
 import { SidebarMenu } from "./sidebarMenu";
 import { SidebarItem } from "./sidebarItem";
 import { CollapseItems } from "./collapseItems";
-import { useSidebarContext } from "../layout/layoutContext";
+import { useSidebarContext } from "../../layout/layoutContext";
 
 export const UserSidebarWrapper = () => {
   const pathname = usePathname();
